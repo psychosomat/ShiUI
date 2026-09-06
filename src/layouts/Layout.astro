@@ -1,0 +1,21 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+}
+
+const { title = "SHIUI — Hinomaru Ink UI Kit" } = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{title}</title>
+    <meta name="description" content="SHIUI — a flat ink UI kit in the spirit of Hinomaru Japanese posters. Paper, sumi, vermilion. Zero shadows." />
+  </head>
+  <body class="paper-grain min-h-screen">
+    <slot />
+  </body>
+</html>

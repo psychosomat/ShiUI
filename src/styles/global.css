@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #e5e3dc;
+  --color-paper-deep: #d9d6cc;
+  --color-sumi: #2a2926;
+  --color-sumi-soft: #4a4843;
+  --color-shu: #e14d2a;
+  --color-shu-deep: #b93a1e;
+
+  --font-display: "Shippori Mincho B1", "Hiragino Mincho ProN", serif;
+  --font-sans: "Zen Kaku Gothic New", "Hiragino Kaku Gothic ProN", sans-serif;
+  --font-mono: "IBM Plex Mono", "Noto Sans Mono", monospace;
+}
+
+html {
+  background: var(--color-paper);
+  color: var(--color-sumi);
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-paper);
+  color: var(--color-sumi);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: var(--color-shu);
+  color: var(--color-paper);
+}
+
+/* sharp poster corners everywhere — except the sun and seals, which stay round */
+* {
+  border-radius: 0 !important;
+}
+.rounded-full {
+  border-radius: 9999px !important;
+}
+
+/* paper grain — flat SVG dots, no shadows */
+.paper-grain {
+  background-image: radial-gradient(rgba(42,41,38,0.055) 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.ink-frame {
+  border: 1.5px solid var(--color-sumi);
+}
+
+.ink-frame-shu {
+  border: 1.5px solid var(--color-shu);
+}
+
+.vertical-rl {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+}
+
+/* micro-interactions: ink wipe fill */
+.ink-wipe {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+}
+.ink-wipe::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--color-sumi);
+  transform: scaleX(0);
+  transform-origin: left center;
+  transition: transform 0.32s cubic-bezier(0.65, 0, 0.35, 1);
+  z-index: -1;
+}
+.ink-wipe:hover::after {
+  transform: scaleX(1);
+}
+.ink-wipe:hover {
+  color: var(--color-paper) !important;
+}
+.ink-wipe-shu::after {
+  background: var(--color-shu);
+}
+
+.ink-wipe-vertical::after {
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+.ink-wipe-vertical:hover::after {
+  transform: scaleY(1);
+}
+
+.link-brush {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1.5px;
+  background-repeat: no-repeat;
+  background-position: left calc(100% - 1px);
+  transition: background-size 0.3s cubic-bezier(0.65, 0, 0.35, 1);
+  padding-bottom: 2px;
+}
+.link-brush:hover {
+  background-size: 100% 1.5px;
+}
+
+/* marquee */
+@keyframes shi-marquee {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.animate-marquee {
+  animation: shi-marquee 22s linear infinite;
+}
+.animate-marquee-fast {
+  animation: shi-marquee 12s linear infinite;
+}
+
+/* enso spinner */
+@keyframes enso-draw {
+  0% { stroke-dashoffset: 220; transform: rotate(0deg); }
+  50% { stroke-dashoffset: 40; }
+  100% { stroke-dashoffset: 220; transform: rotate(360deg); }
+}
+.enso-spin {
+  animation: enso-draw 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+  transform-origin: center;
+}
+
+/* stamp press */
+@keyframes stamp-in {
+  0% { transform: scale(1.6) rotate(-8deg); opacity: 0; }
+  60% { transform: scale(0.96) rotate(-3deg); opacity: 1; }
+  100% { transform: scale(1) rotate(-3deg); opacity: 1; }
+}
+.stamp-in {
+  animation: stamp-in 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
+}
+
+/* motion is hover-only: wipes, draws, stamps — no scroll reveals */
+
+/* focus: vermilion frame, no shadow */
+:focus-visible {
+  outline: 2px solid var(--color-shu);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee, .animate-marquee-fast, .enso-spin { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+/* range slider ink */
+input[type="range"].ink-range {
+  -webkit-appearance: none;
+  appearance: none;
+  height: 2px;
+  background: var(--color-sumi);
+}
+input[type="range"].ink-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background: var(--color-shu);
+  border: 1.5px solid var(--color-sumi);
+  cursor: pointer;
+}
+input[type="range"].ink-range::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background: var(--color-shu);
+  border: 1.5px solid var(--color-sumi);
+  cursor: pointer;
+}
+
+/* scrollbars */
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--color-paper); border-left: 1.5px solid var(--color-sumi); }
+::-webkit-scrollbar-thumb { background: var(--color-sumi); }
+::-webkit-scrollbar-thumb:hover { background: var(--color-shu); }
