@@ -1,0 +1,20 @@
+---
+import { ChartBars } from "../ui/ChartBars";
+import { ChartTrend } from "../ui/ChartTrend";
+---
+<section class="border-[1.5px] border-sumi bg-paper">
+  <div class="flex flex-wrap items-center gap-3 border-b-[1.5px] border-sumi px-4 py-2.5">
+    <span class="font-mono text-[10px] uppercase tracking-[0.24em]">Block 23 — Ink trend</span>
+    <span class="ml-auto inline-flex items-center gap-1.5 font-mono text-[10px] uppercase tracking-[0.16em]"><span class="h-2 w-2 animate-pulse bg-shu"></span>Spring run · live</span>
+  </div>
+  <div class="grid grid-cols-3 divide-x divide-sumi border-b-[1.5px] border-sumi text-center">
+    <div class="p-3"><div class="font-display text-[26px] font-bold leading-none">1,214</div><div class="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] opacity-60">Pulls · 12 wks</div></div>
+    <div class="bg-sumi p-3 text-paper"><div class="font-display text-[26px] font-bold leading-none text-shu">+18</div><div class="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] opacity-60">This week</div></div>
+    <div class="p-3"><div class="font-display text-[26px] font-bold leading-none">98.2%</div><div class="mt-1 font-mono text-[9px] uppercase tracking-[0.18em] opacity-60">Clean</div></div>
+  </div>
+  <div class="grid gap-4 p-4 md:grid-cols-2">
+    <ChartTrend />
+    <ChartBars />
+  </div>
+  <div class="flex items-center justify-between border-t-[1.5px] border-sumi px-4 py-2 font-mono text-[10px] uppercase tracking-[0.18em] opacity-60"><span>Fig. 23 — Trend + rungs</span><span class="vertical-rl hidden">刷り</span><span>Press ledger · 2026</span></div>
+</section>

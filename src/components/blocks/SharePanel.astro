@@ -1,0 +1,19 @@
+---
+import { ChartDonut } from "../ui/ChartDonut";
+import { ChartWaffle } from "../ui/ChartWaffle";
+---
+<section class="border-[1.5px] border-sumi bg-paper">
+  <div class="flex flex-wrap items-center gap-3 border-b-[1.5px] border-sumi bg-sumi px-4 py-2.5 text-paper">
+    <span class="font-mono text-[10px] uppercase tracking-[0.24em]">Block 24 — Edition shares</span>
+    <span class="ml-auto font-mono text-[10px] uppercase tracking-[0.16em] text-shu">300 numbered</span>
+  </div>
+  <div class="grid gap-4 p-4 md:grid-cols-2">
+    <ChartDonut />
+    <ChartWaffle />
+  </div>
+  <div class="grid grid-cols-3 divide-x divide-sumi border-t-[1.5px] border-sumi text-center font-mono text-[10px] uppercase tracking-[0.16em]">
+    <div class="p-2.5">Kozo · 156</div>
+    <div class="p-2.5">Kraft · 93</div>
+    <div class="p-2.5">Mitsu · 51</div>
+  </div>
+</section>

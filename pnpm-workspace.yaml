@@ -1,2 +1,16 @@
+minimumReleaseAge: 10080
+minimumReleaseAgeExclude:
+  - '@astrojs/*'
+  - '@oxc-project/*'
+  - '@rolldown/*'
+  - '@types/*'
+  - astro@7.3.1
+  - baseline-browser-mapping@2.11.21
+  - browserslist@4.28.9
+  - electron-to-chromium@1.5.422
+  - postcss@8.5.28
+  - rolldown@1.2.7
+  - tinyexec@1.3.1
+  - undici@8.10.2
 allowBuilds:
   esbuild: false

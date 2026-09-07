@@ -1,36 +1,38 @@
 ---
-import Layout from "../layouts/Layout.astro";
-import * as U from "../components/ui/index.js";
-import { CopyActions } from "../components/ui/CopyActions";
-import HeroHinomaru from "../components/blocks/HeroHinomaru.astro";
-import TypeSpecimen from "../components/blocks/TypeSpecimen.astro";
-import FeatureGrid from "../components/blocks/FeatureGrid.astro";
-import PricingTable from "../components/blocks/PricingTable.astro";
-import TestimonialWall from "../components/blocks/TestimonialWall.astro";
-import FaqBlock from "../components/blocks/FaqBlock.astro";
-import StatsBand from "../components/blocks/StatsBand.astro";
-import NewsletterPanel from "../components/blocks/NewsletterPanel.astro";
 import AuthCard from "../components/blocks/AuthCard.astro";
 import CartRow from "../components/blocks/CartRow.astro";
-import ProfileCard from "../components/blocks/ProfileCard.astro";
-import TimelineSection from "../components/blocks/TimelineSection.astro";
-import TableSection from "../components/blocks/TableSection.astro";
-import GalleryStrip from "../components/blocks/GalleryStrip.astro";
-import CtaBanner from "../components/blocks/CtaBanner.astro";
 import ContactForm from "../components/blocks/ContactForm.astro";
-import NoticeStack from "../components/blocks/NoticeStack.astro";
+import CtaBanner from "../components/blocks/CtaBanner.astro";
 import DashboardPanel from "../components/blocks/DashboardPanel.astro";
-import StepsWizard from "../components/blocks/StepsWizard.astro";
-import SealWall from "../components/blocks/SealWall.astro";
+import FaqBlock from "../components/blocks/FaqBlock.astro";
+import FeatureGrid from "../components/blocks/FeatureGrid.astro";
 import FooterInk from "../components/blocks/FooterInk.astro";
+import GalleryStrip from "../components/blocks/GalleryStrip.astro";
+import HeroHinomaru from "../components/blocks/HeroHinomaru.astro";
 import MarqueeBand from "../components/blocks/MarqueeBand.astro";
+import NewsletterPanel from "../components/blocks/NewsletterPanel.astro";
+import NoticeStack from "../components/blocks/NoticeStack.astro";
+import PricingTable from "../components/blocks/PricingTable.astro";
+import ProfileCard from "../components/blocks/ProfileCard.astro";
+import SealWall from "../components/blocks/SealWall.astro";
+import SharePanel from "../components/blocks/SharePanel.astro";
+import StatsBand from "../components/blocks/StatsBand.astro";
+import StepsWizard from "../components/blocks/StepsWizard.astro";
+import TableSection from "../components/blocks/TableSection.astro";
+import TestimonialWall from "../components/blocks/TestimonialWall.astro";
+import TimelineSection from "../components/blocks/TimelineSection.astro";
+import TrendReport from "../components/blocks/TrendReport.astro";
+import TypeSpecimen from "../components/blocks/TypeSpecimen.astro";
+import { CopyActions } from "../components/ui/CopyActions";
+import * as U from "../components/ui/index.js";
+import Layout from "../layouts/Layout.astro";
 ---
-<Layout title="SHIUI — Hinomaru Ink UI Kit · 107 elements / 22 blocks">
+<Layout title="SHIUI — Hinomaru Ink UI Kit · 111 elements / 24 blocks">
 <header class="sticky top-0 z-50 border-b-[1.5px] border-sumi bg-paper">
   <div class="mx-auto flex max-w-6xl flex-wrap items-center gap-3 px-4 py-2.5 sm:px-6">
     <div class="flex items-center gap-3"><span class="h-8 w-8 rounded-full bg-shu"></span><span><span class="block font-display text-[18px] font-bold leading-none">SHIUI 詩</span><span class="block font-mono text-[9px] uppercase tracking-[0.3em] opacity-60">Hinomaru ink kit</span></span></div>
     <nav class="ml-2 hidden items-center gap-5 font-mono text-[11px] uppercase tracking-[0.16em] md:flex"><a href="#elements" class="link-brush">Elements</a><a href="#blocks" class="link-brush">Blocks</a><a href="#tokens" class="link-brush">Tokens</a></nav>
-    <div class="ml-auto flex items-center gap-2"><span class="hidden items-center gap-2 border-[1.5px] border-sumi px-3 py-1.5 font-mono text-[11px] uppercase sm:inline-flex"><span class="h-2 w-2 animate-pulse bg-shu"></span>107 live</span><a href="#blocks" class="border-[1.5px] border-sumi bg-sumi px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-paper">Get the kit →</a></div>
+    <div class="ml-auto flex items-center gap-2"><span class="hidden items-center gap-2 border-[1.5px] border-sumi px-3 py-1.5 font-mono text-[11px] uppercase sm:inline-flex"><span class="h-2 w-2 animate-pulse bg-shu"></span>111 live</span><a href="#blocks" class="border-[1.5px] border-sumi bg-sumi px-4 py-1.5 font-mono text-[11px] uppercase tracking-[0.14em] text-paper">Get the kit →</a></div>
   </div>
 </header>
 <section class="border-b-[1.5px] border-sumi">
@@ -41,12 +43,12 @@ import MarqueeBand from "../components/blocks/MarqueeBand.astro";
       <p class="mt-5 max-w-[52ch] font-sans text-[15px] leading-relaxed opacity-75">SHIUI is a reusable component kit drawn like a Hinomaru poster — flat 2D, neat 1.5px lines, zero shadows, three colours only. Every card below is <b>live</b>: press it, flip it, dismiss it. Like what you see? Copy its import or full source straight from the card.</p>
       <div class="mt-6 flex flex-wrap gap-3"><a href="#elements" class="ink-wipe inline-flex items-center gap-2 border-[1.5px] border-sumi bg-shu px-5 py-2.5 font-sans text-[13px] font-bold uppercase tracking-[0.14em] text-paper">Browse elements ↓</a><a href="#tokens" class="ink-wipe inline-flex items-center gap-2 border-[1.5px] border-sumi px-5 py-2.5 font-sans text-[13px] font-bold uppercase tracking-[0.14em]">Copy tokens</a></div>
       <div class="mt-8 grid grid-cols-3 divide-x divide-sumi border-[1.5px] border-sumi text-center">
-        <div class="p-3"><div class="font-display text-[26px] font-bold">107</div><div class="font-mono text-[9px] uppercase tracking-[0.2em] opacity-60">Live elements</div></div>
-        <div class="p-3"><div class="font-display text-[26px] font-bold">22</div><div class="font-mono text-[9px] uppercase tracking-[0.2em] opacity-60">Blocks</div></div>
+        <div class="p-3"><div class="font-display text-[26px] font-bold">111</div><div class="font-mono text-[9px] uppercase tracking-[0.2em] opacity-60">Live elements</div></div>
+        <div class="p-3"><div class="font-display text-[26px] font-bold">24</div><div class="font-mono text-[9px] uppercase tracking-[0.2em] opacity-60">Blocks</div></div>
         <div class="p-3"><div class="font-display text-[26px] font-bold text-shu">3</div><div class="font-mono text-[9px] uppercase tracking-[0.2em] opacity-60">Colours</div></div>
       </div>
     </div>
-    <div class="relative flex min-h-[380px] flex-col items-center justify-center overflow-hidden border-[1.5px] border-sumi bg-paper-deep md:ml-4 md:mt-0 mt-4">
+    <div class="relative flex min-h-95 flex-col items-center justify-center overflow-hidden border-[1.5px] border-sumi bg-paper-deep md:ml-4 md:mt-0 mt-4">
       <div data-sun class="h-44 w-44 rounded-full bg-shu"></div>
       <span class="vertical-rl absolute right-3 top-4 font-display text-[15px] font-bold tracking-[0.34em]">日の丸、紙と墨</span>
       <span class="vertical-rl absolute left-3 top-4 font-mono text-[10px] uppercase tracking-[0.3em] opacity-60">Fig. 00 — Hinomaru</span>
@@ -54,144 +56,616 @@ import MarqueeBand from "../components/blocks/MarqueeBand.astro";
     </div>
   </div>
 </section>
-<MarqueeBand />
 <section id="tokens" class="mx-auto max-w-6xl px-4 py-10 sm:px-6">
   <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-shu px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">00</span><span class="font-display text-[16px] font-bold">Tokens — three colours, three voices, one line</span><span class="mx-1 h-px flex-1 bg-sumi/30"></span><span class="font-mono text-[10px] uppercase tracking-[0.2em] opacity-60">Shiui / Kit</span></div>
   <div class="mt-5 grid gap-4 md:grid-cols-3">
-    <div class="border-[1.5px] border-sumi bg-paper p-5"><div class="h-16 border-[1.5px] border-sumi bg-[#e5e3dc]"></div><div class="mt-3 font-display text-[18px] font-bold">Paper — #e5e3dc</div><div class="font-mono text-[11px] opacity-60">GROUND · WASHI · MARGIN</div><p class="mt-2 text-[13px] opacity-70">Every surface. Breathe first, ink second.</p></div>
-    <div class="border-[1.5px] border-sumi bg-paper p-5"><div class="h-16 border-[1.5px] border-sumi bg-[#2a2926]"></div><div class="mt-3 font-display text-[18px] font-bold">Sumi — #2a2926</div><div class="font-mono text-[11px] opacity-60">LINE · TYPE · FRAME</div><p class="mt-2 text-[13px] opacity-70">Every border and body word. 1.5px, never shadow.</p></div>
-    <div class="border-[1.5px] border-shu bg-paper p-5"><div class="h-16 border-[1.5px] border-shu bg-[#e14d2a]"></div><div class="mt-3 font-display text-[18px] font-bold text-shu">Shu — #e14d2a</div><div class="font-mono text-[11px] opacity-60">SUN · SEAL · SIGNAL</div><p class="mt-2 text-[13px] opacity-70">One accent, spent sparingly — sun, seal, shout.</p></div>
+    <div class="border-[1.5px] border-sumi bg-paper p-5"><div class="h-16 border-[1.5px] border-sumi bg-paper"></div><div class="mt-3 font-display text-[18px] font-bold">Paper — #e5e3dc</div><div class="font-mono text-[11px] opacity-60">GROUND · WASHI · MARGIN</div><p class="mt-2 text-[13px] opacity-70">Every surface. Breathe first, ink second.</p></div>
+    <div class="border-[1.5px] border-sumi bg-paper p-5"><div class="h-16 border-[1.5px] border-sumi bg-sumi"></div><div class="mt-3 font-display text-[18px] font-bold">Sumi — #2a2926</div><div class="font-mono text-[11px] opacity-60">LINE · TYPE · FRAME</div><p class="mt-2 text-[13px] opacity-70">Every border and body word. 1.5px, never shadow.</p></div>
+    <div class="border-[1.5px] border-shu bg-paper p-5"><div class="h-16 border-[1.5px] border-shu bg-shu"></div><div class="mt-3 font-display text-[18px] font-bold text-shu">Shu — #e14d2a</div><div class="font-mono text-[11px] opacity-60">SUN · SEAL · SIGNAL</div><p class="mt-2 text-[13px] opacity-70">One accent, spent sparingly — sun, seal, shout.</p></div>
   </div>
 </section>
-<main id="elements" class="mx-auto max-w-6xl px-4 sm:px-6"><div class="mt-2 flex items-end justify-between border-b-[3px] border-sumi pb-3"><div><div class="font-mono text-[11px] uppercase tracking-[0.24em] text-shu">The catalogue</div><h2 class="font-display text-[34px] font-bold leading-none">107 live elements</h2></div><div class="hidden text-right font-mono text-[10px] uppercase leading-relaxed tracking-[0.18em] opacity-60 sm:block">Try it on the card, then<br/>copy import or source</div></div>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">01</span><span class="font-display text-[17px] font-bold">Buttons & actions</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">one system — 44px base, shu shouts once</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 001 — ButtonPrimary</span><CopyActions name="ButtonPrimary" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonPrimary /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Main order — shu fill, arrow slides on hover. One per view.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 002 — ButtonSecondary</span><CopyActions name="ButtonSecondary" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonSecondary /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Second path — paper fill, ink wipe to sumi on hover.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 003 — ButtonOutline</span><CopyActions name="ButtonOutline" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonOutline /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Scarce action — shu frame, fills only on hover.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 004 — ButtonGhost</span><CopyActions name="ButtonGhost" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonGhost /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Quiet escape — brush underline, no frame at all.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 005 — ButtonInk</span><CopyActions name="ButtonInk" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonInk /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Night primary — sumi solid, wipes to vermilion.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 006 — ButtonDestructive</span><CopyActions name="ButtonDestructive" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonDestructive /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>No return — deep vermilion for closing editions.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 007 — ButtonSmall</span><CopyActions name="ButtonSmall" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonSmall /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Dense UI — 32px for toolbars, tables, filters.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 008 — ButtonLarge</span><CopyActions name="ButtonLarge" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonLarge /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Final step — full-width checkout bar with number.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 009 — IconButton</span><CopyActions name="IconButton" client:load /></div><div class="min-h-[118px] p-4"><U.IconButton /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>One glyph — 40px square for plus, menu, close.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 010 — ButtonLoading</span><CopyActions name="ButtonLoading" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonLoading /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Working state — enso spinner, disabled, announced.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 011 — ButtonWithArrow</span><CopyActions name="ButtonWithArrow" client:load /></div><div class="min-h-[118px] p-4"><U.ButtonWithArrow /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Editorial jump — headline button with filling arrow.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 012 — SplitButton</span><CopyActions name="SplitButton" client:load /></div><div class="min-h-[118px] p-4"><U.SplitButton client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Buy + options — primary action with live dropdown.</p></article>
+<main id="elements" class="mx-auto max-w-6xl px-4 sm:px-6">
+  <div class="mt-2 flex items-end justify-between border-b-[3px] border-sumi pb-3"><div><div class="font-mono text-[11px] uppercase tracking-[0.24em] text-shu">The catalogue</div><h2 class="font-display text-[34px] font-bold leading-none">111 live elements</h2></div><div class="hidden text-right font-mono text-[10px] uppercase leading-relaxed tracking-[0.18em] opacity-60 sm:block">Try it on the card, then<br/>copy import or source</div></div>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">01</span><span class="font-display text-[17px] font-bold">Buttons & actions</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">one system — 44px base, shu shouts once</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 001 — ButtonPrimary</span><CopyActions name="ButtonPrimary" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonPrimary /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Main order — shu fill, arrow slides on hover. One per view.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 002 — ButtonSecondary</span><CopyActions name="ButtonSecondary" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonSecondary /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Second path — paper fill, ink wipe to sumi on hover.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 003 — ButtonOutline</span><CopyActions name="ButtonOutline" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonOutline /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Scarce action — shu frame, fills only on hover.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 004 — ButtonGhost</span><CopyActions name="ButtonGhost" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonGhost /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Quiet escape — brush underline, no frame at all.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 005 — ButtonInk</span><CopyActions name="ButtonInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonInk /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Night primary — sumi solid, wipes to vermilion.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 006 — ButtonDestructive</span><CopyActions name="ButtonDestructive" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonDestructive /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>No return — deep vermilion for closing editions.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 007 — ButtonSmall</span><CopyActions name="ButtonSmall" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonSmall /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Dense UI — 32px for toolbars, tables, filters.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 008 — ButtonLarge</span><CopyActions name="ButtonLarge" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonLarge /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Final step — full-width checkout bar with number.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 009 — IconButton</span><CopyActions name="IconButton" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.IconButton /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>One glyph — 40px square for plus, menu, close.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 010 — ButtonLoading</span><CopyActions name="ButtonLoading" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonLoading /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Working state — enso spinner, disabled, announced.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 011 — ButtonWithArrow</span><CopyActions name="ButtonWithArrow" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ButtonWithArrow /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Editorial jump — headline button with filling arrow.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 012 — SplitButton</span><CopyActions name="SplitButton" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SplitButton client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Buy + options — primary action with live dropdown.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">02</span><span class="font-display text-[17px] font-bold">Seals, tags & eyebrows</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">hanko stamps, numerals, kickers</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 013 — BadgeCount</span><CopyActions name="BadgeCount" client:load /></div><div class="min-h-[118px] p-4"><U.BadgeCount /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fresh count — unread proofs in a shu square.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 014 — BadgeDot</span><CopyActions name="BadgeDot" client:load /></div><div class="min-h-[118px] p-4"><U.BadgeDot /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Live pulse — the press is running right now.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 015 — TagChip</span><CopyActions name="TagChip" client:load /></div><div class="min-h-[118px] p-4"><U.TagChip /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Filled tag — solid sumi taxonomy.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 016 — TagOutline</span><CopyActions name="TagOutline" client:load /></div><div class="min-h-[118px] p-4"><U.TagOutline /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Open tag — lightweight taxonomy.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 017 — HankoSeal</span><CopyActions name="HankoSeal" client:load /></div><div class="min-h-[118px] p-4"><U.HankoSeal /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Square seal — the studio signature stamp.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 018 — HankoRound</span><CopyActions name="HankoRound" client:load /></div><div class="min-h-[118px] p-4"><U.HankoRound /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Round seal — approval and origin mark.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 019 — KickerLabel</span><CopyActions name="KickerLabel" client:load /></div><div class="min-h-[118px] p-4"><U.KickerLabel /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Eyebrow — section opener with shu dash.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 020 — StatusPill</span><CopyActions name="StatusPill" client:load /></div><div class="min-h-[118px] p-4"><U.StatusPill /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>State pill — availability at a glance.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 021 — NumeralSeal</span><CopyActions name="NumeralSeal" client:load /></div><div class="min-h-[118px] p-4"><U.NumeralSeal /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Plate numeral — kanji in an ink ring.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 022 — PriceStamp</span><CopyActions name="PriceStamp" client:load /></div><div class="min-h-[118px] p-4"><U.PriceStamp /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Price stamp — tilted vermilion, market feel.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">02</span><span class="font-display text-[17px] font-bold">Seals, tags & eyebrows</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">hanko stamps, numerals, kickers</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 013 — BadgeCount</span><CopyActions name="BadgeCount" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.BadgeCount /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fresh count — unread proofs in a shu square.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 014 — BadgeDot</span><CopyActions name="BadgeDot" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.BadgeDot /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Live pulse — the press is running right now.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 015 — TagChip</span><CopyActions name="TagChip" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TagChip /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Filled tag — solid sumi taxonomy.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 016 — TagOutline</span><CopyActions name="TagOutline" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TagOutline /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Open tag — lightweight taxonomy.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 017 — HankoSeal</span><CopyActions name="HankoSeal" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.HankoSeal /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Square seal — the studio signature stamp.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 018 — HankoRound</span><CopyActions name="HankoRound" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.HankoRound /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Round seal — approval and origin mark.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 019 — KickerLabel</span><CopyActions name="KickerLabel" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.KickerLabel /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Eyebrow — section opener with shu dash.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 020 — StatusPill</span><CopyActions name="StatusPill" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.StatusPill /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>State pill — availability at a glance.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 021 — NumeralSeal</span><CopyActions name="NumeralSeal" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.NumeralSeal /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Plate numeral — kanji in an ink ring.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 022 — PriceStamp</span><CopyActions name="PriceStamp" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.PriceStamp /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Price stamp — tilted vermilion, market feel.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">03</span><span class="font-display text-[17px] font-bold">Forms & inputs</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">1.5px frames, shu focus, all stateful</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 023 — TextInput</span><CopyActions name="TextInput" client:load /></div><div class="min-h-[118px] p-4"><U.TextInput /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Single line — names, cities, postcodes.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 024 — TextareaInput</span><CopyActions name="TextareaInput" client:load /></div><div class="min-h-[118px] p-4"><U.TextareaInput /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Long note — commissions with counter.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 025 — SelectInput</span><CopyActions name="SelectInput" client:load /></div><div class="min-h-[118px] p-4"><U.SelectInput /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>One of many — native paper-stock picker.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 026 — CheckboxInk</span><CopyActions name="CheckboxInk" client:load /></div><div class="min-h-[118px] p-4"><U.CheckboxInk client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Opt in — washi wrapping consent. Click it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 027 — CheckboxCard</span><CopyActions name="CheckboxCard" client:load /></div><div class="min-h-[118px] p-4"><U.CheckboxCard client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Pick a tier — selectable plan card. Click it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 028 — RadioInk</span><CopyActions name="RadioInk" client:load /></div><div class="min-h-[118px] p-4"><U.RadioInk client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Mutual choice — sumi vs shu. Click it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 029 — ToggleButton</span><CopyActions name="ToggleButton" client:load /></div><div class="min-h-[118px] p-4"><U.ToggleButton client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Filter chip — pressed state in sumi. Click it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 030 — SwitchInk</span><CopyActions name="SwitchInk" client:load /></div><div class="min-h-[118px] p-4"><U.SwitchInk client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Binary room — night printing toggle. Flip it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 031 — RangeSlider</span><CopyActions name="RangeSlider" client:load /></div><div class="min-h-[118px] p-4"><U.RangeSlider client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>How much — live ink-density readout. Drag it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 032 — SearchInput</span><CopyActions name="SearchInput" client:load /></div><div class="min-h-[118px] p-4"><U.SearchInput client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Find — clears itself when you type. Type here.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 033 — PasswordInput</span><CopyActions name="PasswordInput" client:load /></div><div class="min-h-[118px] p-4"><U.PasswordInput client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Secret — folio access with real reveal. Try Show.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 034 — FileInput</span><CopyActions name="FileInput" client:load /></div><div class="min-h-[118px] p-4"><U.FileInput /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Artwork drop — PDF and PNG up to 24 MB.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 035 — DateInput</span><CopyActions name="DateInput" client:load /></div><div class="min-h-[118px] p-4"><U.DateInput /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Split date — year, month, day fields.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 036 — OtpInput</span><CopyActions name="OtpInput" client:load /></div><div class="min-h-[118px] p-4"><U.OtpInput client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Four digits — auto-advances as you type. Try it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 037 — InputAddon</span><CopyActions name="InputAddon" client:load /></div><div class="min-h-[118px] p-4"><U.InputAddon /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Money in — yen prefix with JPY suffix.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 038 — InputIcon</span><CopyActions name="InputIcon" client:load /></div><div class="min-h-[118px] p-4"><U.InputIcon /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Verified mail — identity with live check.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 039 — FormLabel</span><CopyActions name="FormLabel" client:load /></div><div class="min-h-[118px] p-4"><U.FormLabel /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Step head — section title plus progress.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 040 — FieldHint</span><CopyActions name="FieldHint" client:load /></div><div class="min-h-[118px] p-4"><U.FieldHint /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Quiet help — how we ship flat.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 041 — FieldError</span><CopyActions name="FieldError" client:load /></div><div class="min-h-[118px] p-4"><U.FieldError /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Loud help — what broke and how to fix it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 042 — QuantityStepper</span><CopyActions name="QuantityStepper" client:load /></div><div class="min-h-[118px] p-4"><U.QuantityStepper client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>How many — edition counter, 1 to 99. Press +.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">03</span><span class="font-display text-[17px] font-bold">Forms & inputs</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">1.5px frames, shu focus, all stateful</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 023 — TextInput</span><CopyActions name="TextInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TextInput /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Single line — names, cities, postcodes.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 024 — TextareaInput</span><CopyActions name="TextareaInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TextareaInput /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Long note — commissions with counter.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 025 — SelectInput</span><CopyActions name="SelectInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SelectInput /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>One of many — native paper-stock picker.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 026 — CheckboxInk</span><CopyActions name="CheckboxInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CheckboxInk client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Opt in — washi wrapping consent. Click it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 027 — CheckboxCard</span><CopyActions name="CheckboxCard" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CheckboxCard client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Pick a tier — selectable plan card. Click it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 028 — RadioInk</span><CopyActions name="RadioInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.RadioInk client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Mutual choice — sumi vs shu. Click it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 029 — ToggleButton</span><CopyActions name="ToggleButton" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ToggleButton client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Filter chip — pressed state in sumi. Click it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 030 — SwitchInk</span><CopyActions name="SwitchInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SwitchInk client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Binary room — night printing toggle. Flip it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 031 — RangeSlider</span><CopyActions name="RangeSlider" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.RangeSlider client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>How much — live ink-density readout. Drag it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 032 — SearchInput</span><CopyActions name="SearchInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SearchInput client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Find — clears itself when you type. Type here.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 033 — PasswordInput</span><CopyActions name="PasswordInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.PasswordInput client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Secret — folio access with real reveal. Try Show.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 034 — FileInput</span><CopyActions name="FileInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.FileInput /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Artwork drop — PDF and PNG up to 24 MB.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 035 — DateInput</span><CopyActions name="DateInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DateInput /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Split date — year, month, day fields.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 036 — OtpInput</span><CopyActions name="OtpInput" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.OtpInput client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Four digits — auto-advances as you type. Try it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 037 — InputAddon</span><CopyActions name="InputAddon" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.InputAddon /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Money in — yen prefix with JPY suffix.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 038 — InputIcon</span><CopyActions name="InputIcon" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.InputIcon /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Verified mail — identity with live check.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 039 — FormLabel</span><CopyActions name="FormLabel" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.FormLabel /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Step head — section title plus progress.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 040 — FieldHint</span><CopyActions name="FieldHint" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.FieldHint /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Quiet help — how we ship flat.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 041 — FieldError</span><CopyActions name="FieldError" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.FieldError /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Loud help — what broke and how to fix it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 042 — QuantityStepper</span><CopyActions name="QuantityStepper" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.QuantityStepper client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>How many — edition counter, 1 to 99. Press +.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">04</span><span class="font-display text-[17px] font-bold">Navigation</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">rails, crumbs, dots and steps — all clickable</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 043 — TabsUnderline</span><CopyActions name="TabsUnderline" client:load /></div><div class="min-h-[118px] p-4"><U.TabsUnderline client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Filter line — catalogue facets. Switch tabs.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 044 — TabsBoxed</span><CopyActions name="TabsBoxed" client:load /></div><div class="min-h-[118px] p-4"><U.TabsBoxed client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Range switch — day, week, season. Switch it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 045 — BreadcrumbTrail</span><CopyActions name="BreadcrumbTrail" client:load /></div><div class="min-h-[118px] p-4"><U.BreadcrumbTrail /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Where am I — index down to the plate.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 046 — PaginationInk</span><CopyActions name="PaginationInk" client:load /></div><div class="min-h-[118px] p-4"><U.PaginationInk client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Many pages — ledger pager with live page. Click.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 047 — StepsBar</span><CopyActions name="StepsBar" client:load /></div><div class="min-h-[118px] p-4"><U.StepsBar /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>How far — cart to post in three stops.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 048 — SidebarItem</span><CopyActions name="SidebarItem" client:load /></div><div class="min-h-[118px] p-4"><U.SidebarItem client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Desk menu — press sections. Pick one.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 049 — MenuList</span><CopyActions name="MenuList" client:load /></div><div class="min-h-[118px] p-4"><U.MenuList client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Pills — anchor shortcuts. Pick one.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 050 — LinkUnderline</span><CopyActions name="LinkUnderline" client:load /></div><div class="min-h-[118px] p-4"><U.LinkUnderline /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>In-text link — colophon reference.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 051 — LinkArrow</span><CopyActions name="LinkArrow" client:load /></div><div class="min-h-[118px] p-4"><U.LinkArrow /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Go see — teaser with filling arrow.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 052 — PageDots</span><CopyActions name="PageDots" client:load /></div><div class="min-h-[118px] p-4"><U.PageDots client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Slides — exhibition position. Click a dot.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 053 — BackToTop</span><CopyActions name="BackToTop" client:load /></div><div class="min-h-[118px] p-4"><U.BackToTop client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Up again — smooth scroll with vertical caption.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 054 — SectionRail</span><CopyActions name="SectionRail" client:load /></div><div class="min-h-[118px] p-4"><U.SectionRail /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Catalogue rail — number plus name.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">04</span><span class="font-display text-[17px] font-bold">Navigation</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">rails, crumbs, dots and steps — all clickable</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 043 — TabsUnderline</span><CopyActions name="TabsUnderline" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TabsUnderline client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Filter line — catalogue facets. Switch tabs.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 044 — TabsBoxed</span><CopyActions name="TabsBoxed" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TabsBoxed client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Range switch — day, week, season. Switch it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 045 — BreadcrumbTrail</span><CopyActions name="BreadcrumbTrail" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.BreadcrumbTrail /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Where am I — index down to the plate.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 046 — PaginationInk</span><CopyActions name="PaginationInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.PaginationInk client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Many pages — ledger pager with live page. Click.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 047 — StepsBar</span><CopyActions name="StepsBar" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.StepsBar /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>How far — cart to post in three stops.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 048 — SidebarItem</span><CopyActions name="SidebarItem" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SidebarItem client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Desk menu — press sections. Pick one.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 049 — MenuList</span><CopyActions name="MenuList" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.MenuList client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Pills — anchor shortcuts. Pick one.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 050 — LinkUnderline</span><CopyActions name="LinkUnderline" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.LinkUnderline /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>In-text link — colophon reference.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 051 — LinkArrow</span><CopyActions name="LinkArrow" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.LinkArrow /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Go see — teaser with filling arrow.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 052 — PageDots</span><CopyActions name="PageDots" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.PageDots client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Slides — exhibition position. Click a dot.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 053 — BackToTop</span><CopyActions name="BackToTop" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.BackToTop client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Up again — smooth scroll with vertical caption.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 054 — SectionRail</span><CopyActions name="SectionRail" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SectionRail /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Catalogue rail — number plus name.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">05</span><span class="font-display text-[17px] font-bold">Feedback & state</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">alerts, toasts, drying bars — dismissible</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 055 — AlertNote</span><CopyActions name="AlertNote" client:load /></div><div class="min-h-[118px] p-4"><U.AlertNote client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>News — proofs ready Thursday. Dismiss it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 056 — AlertVermilion</span><CopyActions name="AlertVermilion" client:load /></div><div class="min-h-[118px] p-4"><U.AlertVermilion client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Warning — vermilion running low. Dismiss it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 057 — ToastInk</span><CopyActions name="ToastInk" client:load /></div><div class="min-h-[118px] p-4"><U.ToastInk client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Done — added with Undo, self-dismisses. Replay it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 058 — InlineBanner</span><CopyActions name="InlineBanner" client:load /></div><div class="min-h-[118px] p-4"><U.InlineBanner /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>House note — the Obon pause strip.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 059 — ProgressBar</span><CopyActions name="ProgressBar" client:load /></div><div class="min-h-[118px] p-4"><U.ProgressBar /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Blocks drying — three of five.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 060 — ProgressRing</span><CopyActions name="ProgressRing" client:load /></div><div class="min-h-[118px] p-4"><U.ProgressRing /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Edition pulled — 74 percent ring.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 061 — SpinnerEnso</span><CopyActions name="SpinnerEnso" client:load /></div><div class="min-h-[118px] p-4"><U.SpinnerEnso /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Working — grinding ink, endless brush.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 062 — SkeletonLines</span><CopyActions name="SkeletonLines" client:load /></div><div class="min-h-[118px] p-4"><U.SkeletonLines /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Loading — shape before content.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 063 — EmptyState</span><CopyActions name="EmptyState" client:load /></div><div class="min-h-[118px] p-4"><U.EmptyState /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Nothing — an empty folio, 空.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 064 — TooltipBubble</span><CopyActions name="TooltipBubble" client:load /></div><div class="min-h-[118px] p-4"><U.TooltipBubble /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Whisper — washi weight tip.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 065 — RatingStars</span><CopyActions name="RatingStars" client:load /></div><div class="min-h-[118px] p-4"><U.RatingStars client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Loved — set your own note. Click a star.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 066 — ConfirmStrip</span><CopyActions name="ConfirmStrip" client:load /></div><div class="min-h-[118px] p-4"><U.ConfirmStrip client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Sure? — discard guard with outcome. Decide.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 067 — LiveDot</span><CopyActions name="LiveDot" client:load /></div><div class="min-h-[118px] p-4"><U.LiveDot /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Crowd — viewers right now.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">05</span><span class="font-display text-[17px] font-bold">Feedback & state</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">alerts, toasts, drying bars — dismissible</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 055 — AlertNote</span><CopyActions name="AlertNote" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.AlertNote client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>News — proofs ready Thursday. Dismiss it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 056 — AlertVermilion</span><CopyActions name="AlertVermilion" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.AlertVermilion client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Warning — vermilion running low. Dismiss it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 057 — ToastInk</span><CopyActions name="ToastInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ToastInk client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Done — added with Undo, self-dismisses. Replay it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 058 — InlineBanner</span><CopyActions name="InlineBanner" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.InlineBanner /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>House note — the Obon pause strip.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 059 — ProgressBar</span><CopyActions name="ProgressBar" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ProgressBar /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Blocks drying — three of five.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 060 — ProgressRing</span><CopyActions name="ProgressRing" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ProgressRing /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Edition pulled — 74 percent ring.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 061 — SpinnerEnso</span><CopyActions name="SpinnerEnso" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SpinnerEnso /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Working — grinding ink, endless brush.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 062 — SkeletonLines</span><CopyActions name="SkeletonLines" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.SkeletonLines /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Loading — shape before content.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 063 — EmptyState</span><CopyActions name="EmptyState" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.EmptyState /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Nothing — an empty folio, 空.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 064 — TooltipBubble</span><CopyActions name="TooltipBubble" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TooltipBubble /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Whisper — washi weight tip.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 065 — RatingStars</span><CopyActions name="RatingStars" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.RatingStars client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Loved — set your own note. Click a star.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 066 — ConfirmStrip</span><CopyActions name="ConfirmStrip" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ConfirmStrip client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Sure? — discard guard with outcome. Decide.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 067 — LiveDot</span><CopyActions name="LiveDot" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.LiveDot /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Crowd — viewers right now.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">06</span><span class="font-display text-[17px] font-bold">Data & walls</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">ledgers, timelines, quotes</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 068 — DataTable</span><CopyActions name="DataTable" client:load /></div><div class="min-h-[118px] p-4"><U.DataTable /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Ledger — plates, stock, quantity.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 069 — StatCard</span><CopyActions name="StatCard" client:load /></div><div class="min-h-[118px] p-4"><U.StatCard /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>One number — impressions today.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 070 — QuoteCard</span><CopyActions name="QuoteCard" client:load /></div><div class="min-h-[118px] p-4"><U.QuoteCard /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Voice — the press master line.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 071 — AvatarCircle</span><CopyActions name="AvatarCircle" client:load /></div><div class="min-h-[118px] p-4"><U.AvatarCircle /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Person — printer portrait.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 072 — AvatarHanko</span><CopyActions name="AvatarHanko" client:load /></div><div class="min-h-[118px] p-4"><U.AvatarHanko /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Studio — verified square mark.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 073 — TimelineRail</span><CopyActions name="TimelineRail" client:load /></div><div class="min-h-[118px] p-4"><U.TimelineRail /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Order — sketch to pull.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 074 — AccordionInk</span><CopyActions name="AccordionInk" client:load /></div><div class="min-h-[118px] p-4"><U.AccordionInk client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fold — questions open and shut. Click one.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 075 — DefinitionList</span><CopyActions name="DefinitionList" client:load /></div><div class="min-h-[118px] p-4"><U.DefinitionList /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Facts — stock, ink, run.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 076 — CodeBlock</span><CopyActions name="CodeBlock" client:load /></div><div class="min-h-[118px] p-4"><U.CodeBlock client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Tokens — three hexes with copy button.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 077 — ListRow</span><CopyActions name="ListRow" client:load /></div><div class="min-h-[118px] p-4"><U.ListRow /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Row — poster with arrow.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 078 — KpiDelta</span><CopyActions name="KpiDelta" client:load /></div><div class="min-h-[118px] p-4"><U.KpiDelta /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Trend — plus against last moon.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 079 — DividerLine</span><CopyActions name="DividerLine" client:load /></div><div class="min-h-[118px] p-4"><U.DividerLine /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Breath — diamond rule.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 080 — DividerSun</span><CopyActions name="DividerSun" client:load /></div><div class="min-h-[118px] p-4"><U.DividerSun /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Breath — sun rule, a section pause.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 081 — TicketStub</span><CopyActions name="TicketStub" client:load /></div><div class="min-h-[118px] p-4"><U.TicketStub /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Night — talk admission stub.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">06</span><span class="font-display text-[17px] font-bold">Data & walls</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">ledgers, timelines, quotes</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 068 — DataTable</span><CopyActions name="DataTable" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DataTable /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Ledger — plates, stock, quantity.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 069 — StatCard</span><CopyActions name="StatCard" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.StatCard /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>One number — impressions today.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 070 — QuoteCard</span><CopyActions name="QuoteCard" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.QuoteCard /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Voice — the press master line.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 071 — AvatarCircle</span><CopyActions name="AvatarCircle" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.AvatarCircle /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Person — printer portrait.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 072 — AvatarHanko</span><CopyActions name="AvatarHanko" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.AvatarHanko /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Studio — verified square mark.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 073 — TimelineRail</span><CopyActions name="TimelineRail" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TimelineRail /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Order — sketch to pull.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 074 — AccordionInk</span><CopyActions name="AccordionInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.AccordionInk client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fold — questions open and shut. Click one.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 075 — DefinitionList</span><CopyActions name="DefinitionList" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DefinitionList /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Facts — stock, ink, run.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 076 — CodeBlock</span><CopyActions name="CodeBlock" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CodeBlock client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Tokens — three hexes with copy button.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 077 — ListRow</span><CopyActions name="ListRow" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ListRow /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Row — poster with arrow.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 078 — KpiDelta</span><CopyActions name="KpiDelta" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.KpiDelta /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Trend — plus against last moon.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 079 — DividerLine</span><CopyActions name="DividerLine" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DividerLine /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Breath — diamond rule.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 080 — DividerSun</span><CopyActions name="DividerSun" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DividerSun /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Breath — sun rule, a section pause.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 081 — TicketStub</span><CopyActions name="TicketStub" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TicketStub /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Night — talk admission stub.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">07</span><span class="font-display text-[17px] font-bold">Overlays</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">dialogs, sheets, menus — all open</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 082 — ModalDialog</span><CopyActions name="ModalDialog" client:load /></div><div class="min-h-[118px] p-4"><U.ModalDialog client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Stop — confirm before closing. Open it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 083 — DrawerPanel</span><CopyActions name="DrawerPanel" client:load /></div><div class="min-h-[118px] p-4"><U.DrawerPanel client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Folio — side cart with total. Close it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 084 — DropdownMenu</span><CopyActions name="DropdownMenu" client:load /></div><div class="min-h-[118px] p-4"><U.DropdownMenu client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Sort — catalogue ordering. Open it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 085 — PopoverNote</span><CopyActions name="PopoverNote" client:load /></div><div class="min-h-[118px] p-4"><U.PopoverNote client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Aside — paper fibre note. Toggle it.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 086 — HoverCard</span><CopyActions name="HoverCard" client:load /></div><div class="min-h-[118px] p-4"><U.HoverCard /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Who — studio preview on hover.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 087 — DialogConfirm</span><CopyActions name="DialogConfirm" client:load /></div><div class="min-h-[118px] p-4"><U.DialogConfirm client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Check — keep or discard, with answer. Decide.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 088 — FilterSheet</span><CopyActions name="FilterSheet" client:load /></div><div class="min-h-[118px] p-4"><U.FilterSheet client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Narrow — removable filter chips. Remove one.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 089 — CommandRow</span><CopyActions name="CommandRow" client:load /></div><div class="min-h-[118px] p-4"><U.CommandRow client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Jump — type to filter commands. Type here.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 090 — NoticeCard</span><CopyActions name="NoticeCard" client:load /></div><div class="min-h-[118px] p-4"><U.NoticeCard /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fresh — just pulled edition.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 091 — CookieStrip</span><CopyActions name="CookieStrip" client:load /></div><div class="min-h-[118px] p-4"><U.CookieStrip /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Consent — one honest cookie.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 092 — CloseButton</span><CopyActions name="CloseButton" client:load /></div><div class="min-h-[118px] p-4"><U.CloseButton /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Dismiss — the square × for every overlay.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">07</span><span class="font-display text-[17px] font-bold">Overlays</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">dialogs, sheets, menus — all open</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 082 — ModalDialog</span><CopyActions name="ModalDialog" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ModalDialog client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Stop — confirm before closing. Open it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 083 — DrawerPanel</span><CopyActions name="DrawerPanel" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DrawerPanel client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Folio — side cart with total. Close it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 084 — DropdownMenu</span><CopyActions name="DropdownMenu" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DropdownMenu client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Sort — catalogue ordering. Open it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 085 — PopoverNote</span><CopyActions name="PopoverNote" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.PopoverNote client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Aside — paper fibre note. Toggle it.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 086 — HoverCard</span><CopyActions name="HoverCard" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.HoverCard /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Who — studio preview on hover.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 087 — DialogConfirm</span><CopyActions name="DialogConfirm" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.DialogConfirm client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Check — keep or discard, with answer. Decide.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 088 — FilterSheet</span><CopyActions name="FilterSheet" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.FilterSheet client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Narrow — removable filter chips. Remove one.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 089 — CommandRow</span><CopyActions name="CommandRow" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CommandRow client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Jump — type to filter commands. Type here.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 090 — NoticeCard</span><CopyActions name="NoticeCard" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.NoticeCard /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fresh — just pulled edition.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 091 — CookieStrip</span><CopyActions name="CookieStrip" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CookieStrip /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Consent — one honest cookie.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 092 — CloseButton</span><CopyActions name="CloseButton" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CloseButton /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Dismiss — the square × for every overlay.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">08</span><span class="font-display text-[17px] font-bold">Cards & promo</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">containers that sell</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 093 — CardInk</span><CopyActions name="CardInk" client:load /></div><div class="min-h-[118px] p-4"><U.CardInk /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Anything box — header, body, footer slots.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 094 — FeatureCell</span><CopyActions name="FeatureCell" client:load /></div><div class="min-h-[118px] p-4"><U.FeatureCell /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Promise — hover inverts to sumi.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 095 — PricingCell</span><CopyActions name="PricingCell" client:load /></div><div class="min-h-[118px] p-4"><U.PricingCell /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Tier — collector pricing with action.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 096 — TestimonialMini</span><CopyActions name="TestimonialMini" client:load /></div><div class="min-h-[118px] p-4"><U.TestimonialMini /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Praise — five stars, one line.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 097 — NewsletterRow</span><CopyActions name="NewsletterRow" client:load /></div><div class="min-h-[118px] p-4"><U.NewsletterRow client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Join — subscribes for real. Press Join.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 098 — CouponEdge</span><CopyActions name="CouponEdge" client:load /></div><div class="min-h-[118px] p-4"><U.CouponEdge client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Gift — dashed code with copy button.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 099 — CalloutKanji</span><CopyActions name="CalloutKanji" client:load /></div><div class="min-h-[118px] p-4"><U.CalloutKanji /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Thesis — poster, not page.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 100 — InfoRow</span><CopyActions name="InfoRow" client:load /></div><div class="min-h-[118px] p-4"><U.InfoRow /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fact row — material ledger line.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 101 — CopyButton</span><CopyActions name="CopyButton" client:load /></div><div class="min-h-[118px] p-4"><U.CopyButton client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Copy this — reusable copy-to-clipboard. Click it.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">08</span><span class="font-display text-[17px] font-bold">Cards & promo</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">containers that sell</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 093 — CardInk</span><CopyActions name="CardInk" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CardInk /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Anything box — header, body, footer slots.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 094 — FeatureCell</span><CopyActions name="FeatureCell" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.FeatureCell /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Promise — hover inverts to sumi.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 095 — PricingCell</span><CopyActions name="PricingCell" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.PricingCell /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Tier — collector pricing with action.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 096 — TestimonialMini</span><CopyActions name="TestimonialMini" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TestimonialMini /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Praise — five stars, one line.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 097 — NewsletterRow</span><CopyActions name="NewsletterRow" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.NewsletterRow client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Join — subscribes for real. Press Join.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 098 — CouponEdge</span><CopyActions name="CouponEdge" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CouponEdge client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Gift — dashed code with copy button.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 099 — CalloutKanji</span><CopyActions name="CalloutKanji" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CalloutKanji /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Thesis — poster, not page.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 100 — InfoRow</span><CopyActions name="InfoRow" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.InfoRow /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Fact row — material ledger line.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 101 — CopyButton</span><CopyActions name="CopyButton" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.CopyButton client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Copy this — reusable copy-to-clipboard. Click it.</p>
+</article>
 </div></section>
-<section class="py-8"><div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">09</span><span class="font-display text-[17px] font-bold">Marks & motion</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">sun, waves, gates — the signature</span></div><div class="mt-4 grid gap-4 md:grid-cols-2">
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 102 — LogoMark</span><CopyActions name="LogoMark" client:load /></div><div class="min-h-[118px] p-4"><U.LogoMark /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Wordmark — sun plus SHIUI 詩.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 103 — IconSun</span><CopyActions name="IconSun" client:load /></div><div class="min-h-[118px] p-4"><U.IconSun /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Disc — the Hinomaru itself.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 104 — IconWave</span><CopyActions name="IconWave" client:load /></div><div class="min-h-[118px] p-4"><U.IconWave /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Sea — seigaiha double stroke.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 105 — IconTorii</span><CopyActions name="IconTorii" client:load /></div><div class="min-h-[118px] p-4"><U.IconTorii /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Gate — threshold with shu plaque.</p></article>
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 106 — MarqueeStrip</span><CopyActions name="MarqueeStrip" client:load /></div><div class="min-h-[118px] p-4"><U.MarqueeStrip /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Ticker — edition news loop.</p></article>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-sumi px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">09</span><span class="font-display text-[17px] font-bold">Marks & motion</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">sun, waves, gates — the signature</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 102 — LogoMark</span><CopyActions name="LogoMark" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.LogoMark /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Wordmark — sun plus SHIUI 詩.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 103 — IconSun</span><CopyActions name="IconSun" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.IconSun /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Disc — the Hinomaru itself.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 104 — IconWave</span><CopyActions name="IconWave" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.IconWave /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Sea — seigaiha double stroke.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 105 — IconTorii</span><CopyActions name="IconTorii" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.IconTorii /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Gate — threshold with shu plaque.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 106 — MarqueeStrip</span><CopyActions name="MarqueeStrip" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.MarqueeStrip /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Ticker — edition news loop.</p>
+</article>
 
-<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40"><div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 107 — TokenSwatch</span><CopyActions name="TokenSwatch" client:load /></div><div class="min-h-[118px] p-4"><U.TokenSwatch client:load /></div><p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Palette — click a colour to copy its hex.</p></article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 107 — TokenSwatch</span><CopyActions name="TokenSwatch" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.TokenSwatch client:load /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Palette — click a colour to copy its hex.</p>
+</article>
+</div></section>
+<section class="py-8">
+  <div class="flex items-center gap-3 border-y-[1.5px] border-sumi py-2"><span class="bg-shu px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">10</span><span class="font-display text-[17px] font-bold">Charts & diagrams</span><span class="mx-1 hidden h-px flex-1 bg-sumi/30 sm:block"></span><span class="hidden font-mono text-[10px] uppercase tracking-[0.18em] opacity-60 sm:block">flat ink, honest axes, shu shouts once</span></div>
+  <div class="mt-4 grid gap-4 md:grid-cols-2">
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 108 — ChartBars</span><CopyActions name="ChartBars" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ChartBars /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Rank — plates by impressions, shu leads from zero.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 109 — ChartTrend</span><CopyActions name="ChartTrend" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ChartTrend /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Climb — twelve weeks of pulls with ink wash.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 110 — ChartDonut</span><CopyActions name="ChartDonut" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ChartDonut /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Shares — stock split of the 300 run.</p>
+</article>
+<article class="group border-[1.5px] border-sumi bg-paper transition-colors duration-300 hover:bg-paper-deep/40">
+  <div class="flex items-center justify-between gap-2 border-b border-sumi/40 px-3.5 py-1.5"><span class="font-mono text-[10px] tracking-[0.18em] opacity-60">№ 111 — ChartWaffle</span><CopyActions name="ChartWaffle" client:load /></div>
+  <div class="min-h-29.5 p-4"><U.ChartWaffle /></div>
+  <p class="border-t border-sumi/25 px-3.5 py-2 font-sans text-[12px] opacity-70"><b class="font-bold">Use — </b>Pulled — one cell per percent, fresh week in shu.</p>
+</article>
 </div></section>
 </main>
-<section id="blocks" class="mx-auto max-w-6xl px-4 pb-16 sm:px-6"><div class="mt-4 flex items-end justify-between border-b-[3px] border-sumi pb-3"><div><div class="font-mono text-[11px] uppercase tracking-[0.24em] text-shu">Compositions</div><h2 class="font-display text-[34px] font-bold leading-none">22 blocks</h2></div><div class="hidden text-right font-mono text-[10px] uppercase leading-relaxed tracking-[0.18em] opacity-60 sm:block">Each wall = many elements<br/>in src/components/blocks/</div></div><div class="mt-8 space-y-8">
+<section id="blocks" class="mx-auto max-w-6xl px-4 pb-16 sm:px-6">
+  <div class="mt-4 flex items-end justify-between border-b-[3px] border-sumi pb-3"><div><div class="font-mono text-[11px] uppercase tracking-[0.24em] text-shu">Compositions</div><h2 class="font-display text-[34px] font-bold leading-none">24 blocks</h2></div><div class="hidden text-right font-mono text-[10px] uppercase leading-relaxed tracking-[0.18em] opacity-60 sm:block">Each wall = many elements<br/>in src/components/blocks/</div></div>
+  <div class="mt-8 space-y-8">
 <HeroHinomaru />
 <TypeSpecimen />
 <FeatureGrid />
@@ -212,7 +686,14 @@ import MarqueeBand from "../components/blocks/MarqueeBand.astro";
 <DashboardPanel />
 <StepsWizard />
 <SealWall />
+<TrendReport />
+<SharePanel />
 <FooterInk />
 </div>
-<div class="mt-10 flex flex-col items-center gap-3 border-[1.5px] border-sumi bg-paper p-8 text-center"><div class="h-12 w-12 rounded-full bg-shu"></div><div class="font-display text-[24px] font-bold">Powered by <a href="https://ddark.dev" target="_blank" rel="noopener noreferrer" class="text-shu underline decoration-shu/30 underline-offset-2 transition-colors hover:decoration-shu">ddark.dev</a></div><div class="font-mono text-[11px] uppercase tracking-[0.2em] opacity-60">Paper #e5e3dc · Sumi #2a2926 · Shu #e14d2a · Shippori / Zen Kaku / Plex Mono</div></div></section>
+<div class="mt-10 flex flex-col items-center gap-3 border-[1.5px] border-sumi bg-paper p-8 text-center">
+  <div class="h-12 w-12 rounded-full bg-shu"></div>
+  <div class="font-display text-[24px] font-bold">Powered by <a href="https://ddark.dev" target="_blank" rel="noopener noreferrer" class="text-shu underline decoration-shu/30 underline-offset-2 transition-colors hover:decoration-shu">ddark.dev</a></div>
+  <div class="font-mono text-[11px] uppercase tracking-[0.2em] opacity-60">Paper #e5e3dc · Sumi #2a2926 · Shu #e14d2a · Shippori / Zen Kaku / Plex Mono</div>
+  </div>
+</section>
 </Layout>

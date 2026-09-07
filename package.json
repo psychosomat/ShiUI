@@ -1,40 +1,35 @@
 {
-	"name": "ShiUI",
-	"version": "1.0.0",
-	"description": "",
-	"main": "index.js",
-	"scripts": {
-		"dev": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview"
-	},
-	"pnpm": {
-		"onlyBuiltDependencies": [
-			"esbuild"
-		]
-	},
-	"keywords": [],
-	"author": "",
-	"license": "ISC",
-	"devEngines": {
-		"packageManager": {
-			"name": "pnpm",
-			"version": "^11.3.0",
-			"onFail": "download"
-		}
-	},
-	"type": "module",
-	"dependencies": {
-		"@astrojs/react": "^6.0.5",
-		"astro": "^7.3.1",
-		"react": "^19.2.8",
-		"react-dom": "^19.2.8"
-	},
-	"devDependencies": {
-		"@tailwindcss/vite": "^4.3.3",
-		"@types/react": "^19.2.18",
-		"@types/react-dom": "^19.2.7",
-		"tailwindcss": "^4.3.3",
-		"typescript": "^7.0.2"
-	}
+  "name": "ShiUI",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": "^11.3.0",
+      "onFail": "download"
+    }
+  },
+  "type": "module",
+  "dependencies": {
+    "@astrojs/react": "^6.0.5",
+    "astro": "^7.3.1",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "tailwindcss": "^4.3.3",
+    "typescript": "^7.0.2"
+  }
 }

@@ -1,6 +1,10 @@
 const cn = (...parts: Array<string | false | null | undefined>): string => parts.filter(Boolean).join(" ");
 
-export function SectionRail({ className, children, ...props }: React.HTMLAttributes<HTMLDivElement> & { children?: React.ReactNode }) {
+export function SectionRail({
+  className,
+  children,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement> & { children?: React.ReactNode }) {
   return (
     <div className={cn("flex items-center gap-3 border-y-[1.5px] border-sumi py-2", className)} {...props}>
       <span className="bg-shu px-2 py-0.5 font-mono text-[11px] font-semibold text-paper">04</span>

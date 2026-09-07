@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;600;700;800&family=Zen+Kaku+Gothic+New:wght@500;700;900&family=IBM+Plex+Mono:wght@400;500;600&display=swap");
 @import "tailwindcss";
 
 @theme {
@@ -35,15 +35,17 @@ body {
 
 /* sharp poster corners everywhere — except the sun and seals, which stay round */
 * {
+  /* biome-ignore lint/complexity/noImportantStyles: design token, must beat Tailwind utilities */
   border-radius: 0 !important;
 }
 .rounded-full {
+  /* biome-ignore lint/complexity/noImportantStyles: sun and seals stay round by design */
   border-radius: 9999px !important;
 }
 
 /* paper grain — flat SVG dots, no shadows */
 .paper-grain {
-  background-image: radial-gradient(rgba(42,41,38,0.055) 1px, transparent 1px);
+  background-image: radial-gradient(rgba(42, 41, 38, 0.055) 1px, transparent 1px);
   background-size: 22px 22px;
 }
 
@@ -80,6 +82,7 @@ body {
   transform: scaleX(1);
 }
 .ink-wipe:hover {
+  /* biome-ignore lint/complexity/noImportantStyles: wipe fill must beat text utilities */
   color: var(--color-paper) !important;
 }
 .ink-wipe-shu::after {
@@ -108,8 +111,12 @@ body {
 
 /* marquee */
 @keyframes shi-marquee {
-  from { transform: translateX(0); }
-  to { transform: translateX(-50%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
 .animate-marquee {
   animation: shi-marquee 22s linear infinite;
@@ -120,9 +127,17 @@ body {
 
 /* enso spinner */
 @keyframes enso-draw {
-  0% { stroke-dashoffset: 220; transform: rotate(0deg); }
-  50% { stroke-dashoffset: 40; }
-  100% { stroke-dashoffset: 220; transform: rotate(360deg); }
+  0% {
+    stroke-dashoffset: 220;
+    transform: rotate(0deg);
+  }
+  50% {
+    stroke-dashoffset: 40;
+  }
+  100% {
+    stroke-dashoffset: 220;
+    transform: rotate(360deg);
+  }
 }
 .enso-spin {
   animation: enso-draw 1.6s cubic-bezier(0.65, 0, 0.35, 1) infinite;
@@ -131,9 +146,18 @@ body {
 
 /* stamp press */
 @keyframes stamp-in {
-  0% { transform: scale(1.6) rotate(-8deg); opacity: 0; }
-  60% { transform: scale(0.96) rotate(-3deg); opacity: 1; }
-  100% { transform: scale(1) rotate(-3deg); opacity: 1; }
+  0% {
+    transform: scale(1.6) rotate(-8deg);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(0.96) rotate(-3deg);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(-3deg);
+    opacity: 1;
+  }
 }
 .stamp-in {
   animation: stamp-in 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.2) both;
@@ -148,8 +172,14 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-marquee, .animate-marquee-fast, .enso-spin { animation: none; }
-  html { scroll-behavior: auto; }
+  .animate-marquee,
+  .animate-marquee-fast,
+  .enso-spin {
+    animation: none;
+  }
+  html {
+    scroll-behavior: auto;
+  }
 }
 
 /* range slider ink */
@@ -176,7 +206,17 @@ input[type="range"].ink-range::-moz-range-thumb {
 }
 
 /* scrollbars */
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: var(--color-paper); border-left: 1.5px solid var(--color-sumi); }
-::-webkit-scrollbar-thumb { background: var(--color-sumi); }
-::-webkit-scrollbar-thumb:hover { background: var(--color-shu); }
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-paper);
+  border-left: 1.5px solid var(--color-sumi);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-sumi);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-shu);
+}
