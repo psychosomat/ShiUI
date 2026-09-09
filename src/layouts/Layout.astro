@@ -18,5 +18,9 @@ const { title = "SHIUI — Hinomaru Ink UI Kit" } = Astro.props;
   </head>
   <body class="paper-grain min-h-screen">
     <slot />
+    <script>
+      import { inject } from "@vercel/analytics";
+      inject();
+    </script>
   </body>
 </html>
