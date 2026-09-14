@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360">
+  <rect width="1200" height="360" fill="#2a2926"/>
+  <rect x="1.5" y="1.5" width="1197" height="357" fill="none" stroke="#4a4843" stroke-width="3"/>
+  <rect x="60" y="40" width="1080" height="280" fill="#e5e3dc" stroke="#e5e3dc" stroke-width="2"/>
+  <rect x="60" y="40" width="1080" height="42" fill="#2a2926"/>
+  <circle cx="88" cy="61" r="7" fill="#e14d2a"/><circle cx="112" cy="61" r="7" fill="none" stroke="#e5e3dc" stroke-width="2"/><circle cx="136" cy="61" r="7" fill="none" stroke="#e5e3dc" stroke-width="2"/>
+  <text x="170" y="66" font-family="monospace" font-size="15" letter-spacing="3" fill="#e5e3dc">shiui — pnpm dev · localhost:4321</text>
+  <text x="92" y="124" font-family="monospace" font-size="17" fill="#4a4843">$ pnpm dev</text>
+  <text x="92" y="152" font-family="monospace" font-size="17" fill="#2a2926">◇ Astro <tspan font-weight="bold">running</tspan> <tspan fill="#e14d2a">● LIVE · 112 elements / 24 blocks</tspan></text>
+  <text x="92" y="192" font-family="monospace" font-size="17" fill="#4a4843">$ press any card → copy import</text>
+  <rect x="92" y="208" width="740" height="44" fill="#2a2926"/>
+  <text x="108" y="236" font-family="monospace" font-size="17" fill="#e5e3dc">import { ButtonPrimary } from "@/components/ui/ButtonPrimary";</text>
+  <rect x="844" y="208" width="130" height="44" fill="#e14d2a"/>
+  <text x="864" y="236" font-family="monospace" font-size="15" font-weight="bold" fill="#e5e3dc">✓ COPIED</text>
+  <text x="92" y="288" font-family="monospace" font-size="15" letter-spacing="2" fill="#4a4843">PAPER #E5E3DC · SUMI #2A2926 · SHU #E14D2A · 1.5PX · 0 SHADOWS</text>
+</svg>

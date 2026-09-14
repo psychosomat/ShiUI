@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="420" viewBox="0 0 1200 420">
+  <rect width="1200" height="420" fill="#e5e3dc"/>
+  <g fill="#2a2926" opacity="0.08">
+    <circle cx="60" cy="40" r="1.6"/><circle cx="110" cy="40" r="1.6"/><circle cx="160" cy="40" r="1.6"/><circle cx="210" cy="40" r="1.6"/><circle cx="260" cy="40" r="1.6"/><circle cx="310" cy="40" r="1.6"/><circle cx="360" cy="40" r="1.6"/><circle cx="410" cy="40" r="1.6"/><circle cx="460" cy="40" r="1.6"/><circle cx="510" cy="40" r="1.6"/><circle cx="560" cy="40" r="1.6"/><circle cx="610" cy="40" r="1.6"/><circle cx="660" cy="40" r="1.6"/><circle cx="710" cy="40" r="1.6"/><circle cx="760" cy="40" r="1.6"/><circle cx="810" cy="40" r="1.6"/><circle cx="860" cy="40" r="1.6"/><circle cx="910" cy="40" r="1.6"/><circle cx="960" cy="40" r="1.6"/><circle cx="1010" cy="40" r="1.6"/><circle cx="1060" cy="40" r="1.6"/><circle cx="1110" cy="40" r="1.6"/>
+    <circle cx="60" cy="90" r="1.6"/><circle cx="110" cy="90" r="1.6"/><circle cx="160" cy="90" r="1.6"/><circle cx="210" cy="90" r="1.6"/><circle cx="260" cy="90" r="1.6"/><circle cx="310" cy="90" r="1.6"/><circle cx="360" cy="90" r="1.6"/><circle cx="410" cy="90" r="1.6"/><circle cx="460" cy="90" r="1.6"/><circle cx="510" cy="90" r="1.6"/><circle cx="560" cy="90" r="1.6"/><circle cx="610" cy="90" r="1.6"/><circle cx="660" cy="90" r="1.6"/><circle cx="710" cy="90" r="1.6"/><circle cx="760" cy="90" r="1.6"/><circle cx="810" cy="90" r="1.6"/><circle cx="860" cy="90" r="1.6"/><circle cx="910" cy="90" r="1.6"/><circle cx="960" cy="90" r="1.6"/><circle cx="1010" cy="90" r="1.6"/><circle cx="1060" cy="90" r="1.6"/><circle cx="1110" cy="90" r="1.6"/>
+  </g>
+  <rect x="1.5" y="1.5" width="1197" height="417" fill="none" stroke="#2a2926" stroke-width="3"/>
+  <rect x="40" y="36" width="1120" height="348" fill="none" stroke="#2a2926" stroke-width="3"/>
+  <rect x="40" y="36" width="1120" height="44" fill="#2a2926"/>
+  <circle cx="68" cy="58" r="6" fill="#e14d2a"/>
+  <text x="88" y="63" font-family="monospace" font-size="15" letter-spacing="4" fill="#e5e3dc">SHIUI — HINOMARU INK KIT · FIG. 00</text>
+  <text x="1030" y="63" font-family="monospace" font-size="15" letter-spacing="2" fill="#e14d2a">● LIVE</text>
+  <circle cx="880" cy="230" r="105" fill="#e14d2a"/>
+  <text x="880" y="238" font-family="serif" font-weight="bold" font-size="64" text-anchor="middle" fill="#e5e3dc">詩</text>
+  <text x="975" y="130" font-family="serif" font-size="22" letter-spacing="8" fill="#2a2926" writing-mode="vertical-rl">日の丸、紙と墨</text>
+  <text x="100" y="150" font-family="monospace" font-size="16" letter-spacing="5" fill="#2a2926">UKIYO-INSPIRED UI KIT — № 04</text>
+  <rect x="100" y="162" width="64" height="4" fill="#e14d2a"/>
+  <text x="96" y="260" font-family="serif" font-weight="bold" font-size="96" fill="#2a2926">Paper. Ink.</text>
+  <text x="96" y="340" font-family="serif" font-weight="bold" font-size="96" fill="#2a2926">Sun.<tspan fill="#e14d2a">■</tspan></text>
+  <text x="640" y="372" font-family="monospace" font-size="14" letter-spacing="2" fill="#2a2926" opacity="0.65">112 ELEMENTS · 24 BLOCKS · 3 COLOURS · 1.5PX · 0 SHADOWS</text>
+</svg>
